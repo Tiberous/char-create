@@ -1,12 +1,35 @@
-var express = require('express')
-var app = express()
-var http = require ('http')
-// respond with "hello world" when a GET request is made to the homepage
-var server = http.createServer(function (request, response) {  
-  response.writeHead(200, {"Content-Type": "text/html"});
+var express = require("express");
+var app = express();
+var router = express.Router();
+var path = __dirname + '/views/';
 
-app.get('/', function (req, res) {
-  res.send('hello world')
+router.use(function (req,res,next) {
+  console.log("/" + req.method);
+  next();
+});
+
+router.get("/",function(req,res){
+  res.sendFile(path + "index.html");
+});
+
+router.get("/about",function(req,res){
+  res.sendFile(path + "about.html");
+});
+
+router.get("/contact",function(req,res){
+  res.sendFile(path + "contact.html");
+});
+
+router.get("/riftscc",function(req,res){
+  res.sendFile(path + "riftscc.html");
 })
-server.listen(9000)})
 
+app.use("/",router);
+
+app.use("*",function(req,res){
+  res.sendFile(path + "404.html");
+});
+
+app.listen(3000,function(){
+  console.log("Live at Port 3000");
+});
