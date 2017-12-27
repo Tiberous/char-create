@@ -1,7 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
   <div>
@@ -10,47 +9,75 @@
          <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/about">About us</a></li>
-        <li class="active"><a href="/contact">Contact us<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="/riftscc">Rifts Character Creator<span class="sr-only">(current)</span></a></li>
       </ul>
 </nav>
 </div>
-  <br/>
-  <form class="form-horizontal" role="form" style="width: 50%;">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" rows="4" name="message"></textarea>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <! Will be used to display an alert to the user>
-        </div>
-    </div>
-</form>
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>General Information</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="charactername">Character Name</label>  
+  <div class="col-md-4">
+  <input id="charactername" name="charactername" type="text" placeholder="Character Name" class="form-control input-md" required="">
+  <span class="help-block">Your Character's Name</span>  
   </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="username">Player Name</label>  
+  <div class="col-md-4">
+  <input id="username" name="username" type="text" placeholder="Player Name" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rcc">RCC</label>
+  <div class="col-md-4">
+    <select id="rcc" name="rcc" class="form-control">
+      <option value="1">Human</option>
+      <option value="2">Psi-Stalker</option>
+    </select>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="description">Description</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="description" name="description">What's your Character Like?</textarea>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="occ">OCC</label>
+  <div class="col-md-4">
+    <select id="occ" name="occ" class="form-control">
+      <option value="1">Mind-Melter</option>
+      <option value="2">GlitterBoy Pilot</option>
+    </select>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id">These's buttons do nothing!</label>
+  <div class="col-md-8">
+    <button id="button1id" name="button1id" class="btn btn-success">Good Button</button>
+    <button id="button2id" name="button2id" class="btn btn-danger">Scary Button</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
 </body>
 </html>

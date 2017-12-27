@@ -1,0 +1,946 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div>
+  <div>
+  <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+         <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About us</a></li>
+        <li class="active"><a href="/riftscc">Rifts Character Creator<span class="sr-only">(current)</span></a></li>
+      </ul>
+</nav>
+</div>
+<form class="form-horizontal">
+<fieldset>
+  <div class="container-fluid">
+        <div class="row">
+
+            <form action="../submit" id="formentry" class="form-horizontal" role="form" data-parsley-validate novalidate>
+                <div class="container-fluid shadow">
+                    <div class="row">
+                        <div id="valErr" class="row viewerror clearfix hidden">
+                            <div class="alert alert-danger">Oops! Seems there are some errors..</div>
+                        </div>
+                        <div id="valOk" class="row viewerror clearfix hidden">
+                            <div class="alert alert-success">Yay! ..</div>
+                        </div>
+
+                        
+                                    <div class="row">
+                                        <div class="col-md-12"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field70">Search</label>
+			    <div class="controls col-sm-9">
+                    
+                <div id="field70" class="input-group">
+        <input type="text" class="form-control" data-role="lookup" data-parsley-errors-container="#errId1">
+      <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+    </div><span id="errId1" class="error"></span></div>
+                
+		</div></div>
+                                    </div><div class="row" id="tab11" data-role="tab" style="display: block;">
+				<ul class="nav nav-tabs">
+					  
+					  
+					  
+				<li class=""><a id="tabLabel463" href="#tabContent463" data-toggle="tab">Character Stable</a></li><li class="active"><a href="#tabContent12" data-toggle="tab" id="tabLabel12">Character Creator</a></li><li class=""><a data-toggle="tab" href="#tabContent13" id="tabLabel13">Gear Creator</a></li><li><a href="#tabContent14" data-toggle="tab" id="tabLabel14">Tab 3</a></li><div class="tab-toolbar"><span class="glyphicon glyphicon-cog"></span></div></ul>
+				<div class="tab-content">
+				  <div class="tab-pane active" id="tabContent12"><div class=""><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field512">Character </label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field512" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId2"><span id="errId2" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field513">Player</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field513" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId3"><span id="errId3" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field520">OCC</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field520" class="form-control" data-role="select" data-parsley-errors-container="#errId4">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId4" class="error"></span></div>
+                
+		</div><div class="formControl ui-draggable" style="display: none;">
+                                <img src="/images/dropdown.png">Drop Down
+                            </div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field526">RCC</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field526" class="form-control" data-role="select" data-parsley-errors-container="#errId5">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId5" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field538">Level</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field538" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId6"><span id="errId6" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-12"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">How Will you Roll?</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio541"><input type="radio" value="Option 1" id="radio541" name="field540" data-parsley-errors-container="#errId7">I will Enter my Stats Manually</label><label class="radio" for="radio542"><input type="radio" value="Option 2" id="radio542" name="field540" data-parsley-errors-container="#errId7">Roll the dice for me!</label><span id="errId7" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    
+			    
+                
+		<button id="button545" type="button" class="btn btn-primary">Roll!</button></div></div></div><div class="row"><div class="col-md-4"><div class="form-group brdbot">
+			    <h3>Attributes</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field584" data-default-label="Header" data-default-is-header="true" data-control-type="header">(Player Entered/Rolled)</p><span id="errId8" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field587">IQ</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field587" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId9"><span id="errId9" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field593">ME</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field593" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId10"><span id="errId10" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field592">MA</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field592" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId11"><span id="errId11" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field591">PS</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field591" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId12"><span id="errId12" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field590">PP</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field590" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId13"><span id="errId13" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field589">PE</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field589" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId14"><span id="errId14" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field588">PB</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field588" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId15"><span id="errId15" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field586">SPD</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field586" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId16"><span id="errId16" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group brdbot" style="display: block;">
+			    <h3>Modifiers</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field89" data-default-label="Header" data-default-is-header="true" data-control-type="header">(System Calculated)</p><span id="errId17" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field558">IQ</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field558" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId18"><span id="errId18" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field556">ME</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field556" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId19"><span id="errId19" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field554">MA</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field554" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId20"><span id="errId20" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field553">PS</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field553" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId21"><span id="errId21" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field555">PP</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field555" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId22"><span id="errId22" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field559">PE</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field559" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId23"><span id="errId23" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field557">PB</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field557" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId24"><span id="errId24" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field560">SPD</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field560" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId25"><span id="errId25" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group brdbot" style="display: block;">
+			    <h3>Totals</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field90" data-default-label="Header" data-default-is-header="true" data-control-type="header">(Displayed on Character Sheet)</p><span id="errId26" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field564">IQ</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field564" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId27"><span id="errId27" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field563">ME</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field563" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId28"><span id="errId28" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field569">MA</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field569" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId29"><span id="errId29" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field568">PS</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field568" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId30"><span id="errId30" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field570">PP</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field570" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId31"><span id="errId31" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field565">PE</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field565" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId32"><span id="errId32" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field567">PB</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field567" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId33"><span id="errId33" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field566">SPD</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field566" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId34"><span id="errId34" class="error"></span></div>
+                
+		</div></div></div><div class="row" style="display: block;"><div class="col-md-12"><div class="row"><div class="col-md-4"><div class="form-group brdbot" style="display: block;">
+			    <h3>Primary/OCC Skills</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field118" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId35" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    
+			    
+                
+		<button id="button122" type="button" class="btn btn-success">Add Skill</button> <button id="button128" type="button" class="btn btn-danger">Remove Skill</button> </div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field136"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field136" class="form-control" data-role="select" data-parsley-errors-container="#errId36">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId36" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field140"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field140" class="form-control" data-role="select" data-parsley-errors-container="#errId37">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId37" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field139"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field139" class="form-control" data-role="select" data-parsley-errors-container="#errId38">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId38" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field135"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field135" class="form-control" data-role="select" data-parsley-errors-container="#errId39">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId39" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field138"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field138" class="form-control" data-role="select" data-parsley-errors-container="#errId40">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId40" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field137"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field137" class="form-control" data-role="select" data-parsley-errors-container="#errId41">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId41" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field134"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field134" class="form-control" data-role="select" data-parsley-errors-container="#errId42">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId42" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field133"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field133" class="form-control" data-role="select" data-parsley-errors-container="#errId43">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId43" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group brdbot" style="display: block;">
+			    <h3>Secondary Skills</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field119" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId44" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    
+			    
+                
+		<button id="button124" type="button" class="btn btn-success">Add Skill</button> <button id="button130" type="button" class="btn btn-danger">Remove Skill</button> </div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field148"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field148" class="form-control" data-role="select" data-parsley-errors-container="#errId45">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId45" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field143"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field143" class="form-control" data-role="select" data-parsley-errors-container="#errId46">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId46" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field141"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field141" class="form-control" data-role="select" data-parsley-errors-container="#errId47">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId47" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field147"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field147" class="form-control" data-role="select" data-parsley-errors-container="#errId48">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId48" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field142"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field142" class="form-control" data-role="select" data-parsley-errors-container="#errId49">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId49" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field145"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field145" class="form-control" data-role="select" data-parsley-errors-container="#errId50">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId50" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field146"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field146" class="form-control" data-role="select" data-parsley-errors-container="#errId51">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId51" class="error"></span></div>
+                
+		</div><div class="formControl ui-draggable" style="display: none;">
+                                <img src="/images/dropdown.png">Drop Down
+                            </div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field578"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field578" class="form-control" data-role="select" data-parsley-errors-container="#errId52">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId52" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group brdbot" style="display: block;">
+			    <h3>Other Skills</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field120" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId53" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    
+			    
+                
+		<button id="button126" type="button" class="btn btn-success">Add Skill</button> <button id="button132" type="button" class="btn btn-danger">Remove Skill</button> </div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field149"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field149" class="form-control" data-role="select" data-parsley-errors-container="#errId54">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId54" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field154"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field154" class="form-control" data-role="select" data-parsley-errors-container="#errId55">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId55" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field155"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field155" class="form-control" data-role="select" data-parsley-errors-container="#errId56">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId56" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field156"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field156" class="form-control" data-role="select" data-parsley-errors-container="#errId57">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId57" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field151"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field151" class="form-control" data-role="select" data-parsley-errors-container="#errId58">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId58" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field150"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field150" class="form-control" data-role="select" data-parsley-errors-container="#errId59">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId59" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field153"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field153" class="form-control" data-role="select" data-parsley-errors-container="#errId60">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId60" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field152"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field152" class="form-control" data-role="select" data-parsley-errors-container="#errId61">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId61" class="error"></span></div>
+                
+		</div></div></div></div></div><div class="row"><div class="col-md-4"><div class="form-group brdbot" style="display: block;">
+			    <h3>Psionics</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field161" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId62" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    
+			    
+                
+		<button id="button165" type="button" class="btn btn-success">Add Psionics</button> <button id="button171" type="button" class="btn btn-danger">Remove Psionics</button> </div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field183"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field183" class="form-control" data-role="select" data-parsley-errors-container="#errId63">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId63" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field179"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field179" class="form-control" data-role="select" data-parsley-errors-container="#errId64">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId64" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field181"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field181" class="form-control" data-role="select" data-parsley-errors-container="#errId65">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId65" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field176"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field176" class="form-control" data-role="select" data-parsley-errors-container="#errId66">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId66" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field180"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field180" class="form-control" data-role="select" data-parsley-errors-container="#errId67">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId67" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field178"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field178" class="form-control" data-role="select" data-parsley-errors-container="#errId68">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId68" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field177"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field177" class="form-control" data-role="select" data-parsley-errors-container="#errId69">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId69" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field182"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field182" class="form-control" data-role="select" data-parsley-errors-container="#errId70">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId70" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group brdbot" style="display: block;">
+			    <h3>Magic</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field162" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId71" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    
+			    
+                
+		<button id="button167" type="button" class="btn btn-success">Add Magic</button> <button id="button173" type="button" class="btn btn-danger">Remove Magic</button> </div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field185"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field185" class="form-control" data-role="select" data-parsley-errors-container="#errId72">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId72" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field190"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field190" class="form-control" data-role="select" data-parsley-errors-container="#errId73">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId73" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field186"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field186" class="form-control" data-role="select" data-parsley-errors-container="#errId74">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId74" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field191"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field191" class="form-control" data-role="select" data-parsley-errors-container="#errId75">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId75" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field189"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field189" class="form-control" data-role="select" data-parsley-errors-container="#errId76">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId76" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field184"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field184" class="form-control" data-role="select" data-parsley-errors-container="#errId77">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId77" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field187"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field187" class="form-control" data-role="select" data-parsley-errors-container="#errId78">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId78" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field188"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field188" class="form-control" data-role="select" data-parsley-errors-container="#errId79">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId79" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group brdbot" style="display: block;">
+			    <h3>Powers/Abilities</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field163" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId80" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    
+			    
+                
+		<button id="button169" type="button" class="btn btn-success">Add Power/Ability</button> <button id="button175" type="button" class="btn btn-danger">Remove Power/Ability</button> </div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field195"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field195" class="form-control" data-role="select" data-parsley-errors-container="#errId81">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId81" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field193"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field193" class="form-control" data-role="select" data-parsley-errors-container="#errId82">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId82" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field198"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field198" class="form-control" data-role="select" data-parsley-errors-container="#errId83">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId83" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field196"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field196" class="form-control" data-role="select" data-parsley-errors-container="#errId84">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId84" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field199"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field199" class="form-control" data-role="select" data-parsley-errors-container="#errId85">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId85" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field192"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field192" class="form-control" data-role="select" data-parsley-errors-container="#errId86">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId86" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field197"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field197" class="form-control" data-role="select" data-parsley-errors-container="#errId87">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId87" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3 sr-only" for="field194"></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field194" class="form-control" data-role="select" data-parsley-errors-container="#errId88">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId88" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-12"><div class="form-group">
+			    
+			    
+                
+		<button id="button624" type="button" class="btn btn-success">Save!</button></div></div></div><div class="row"><div class="col-md-6"><div class="form-group" style="display: block;">
+			    
+			    
+                
+		<button id="button598" type="button" class="btn btn-warning">Clear All</button> <button id="button600" type="button" class="btn btn-info">Lock Sheet</button> </div></div><div class="col-md-6"><div class="form-group">
+			    
+			    
+                
+		<button id="button618" type="button" class="btn btn-primary">View Character Sheet</button> <button id="button620" type="button" class="btn btn-primary">Print Character Sheet</button> </div></div></div></div></div><div class="tab-pane" id="tabContent463"><div class=""></div></div>
+				  <div class="tab-pane" id="tabContent13"><div class=""></div></div>
+				  <div class="tab-pane" id="tabContent14"><div class=""></div></div>
+				</div>
+		</div><div class="row" style="display: block;"><div class="col-md-12"></div></div>
+                                
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+
+
+    <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
+    <script src="http://protostrap.com/Assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.js" type="text/javascript"></script>
+
+    <script src="http://protostrap.com/Assets/inputmask/js/jquery.inputmask.js" type="text/javascript"></script>
+    <script src="http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
+    <script src="http://protostrap.com/Assets/parsely/parsley.extend.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/parsely/2.0/parsley.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/download.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/protostrap.js" type="text/javascript"></script>
+
+</body>
+</html>
