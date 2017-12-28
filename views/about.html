@@ -1,20 +1,124 @@
-<html>
-<head>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <div>
-  <div>
-  <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
-         <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li class="active"><a href="/about">About us<span class="sr-only">(current)</span></a></li>
-        <li><a href="/riftscc">Rifts Character Creator</a></li>
-      </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body>
+      <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Character Creator</a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav> 
+
+   <div class="container">
+     <div class="jumbotron">
+      <h1>Char Create</h1>
+      </div>
+       </div>
+       
+       <!--Basic Character Information Container. Contains Created by, Character Name, and Character Level -->
+    <div class="container">
+      <div class="row">
+ 
+        <div class="col-3">
+          <label for="charname">Character Name:</label>
+          <input type="text" class="form-control" id="charname">
+              
+        </div>  
+
+        <!--This will need to be fed from the database-->
+      <div class="col-3">
+          <label for="rcc">Select RCC</label>
+          <select class="form-control" id="selrcc">
+            <option>---Select---</option>
+            <option>Human</option>
+            <option>Dragon</option>
+            <option>Psi-Stalker</option>
+            <option>Elf</option>
+          </select>
+          
+        </div>
+        
+        <!--This will need to be fed from the database-->
+        <div class="col-3">
+          <label for="occ">Select OCC</label>
+          <select class="form-control" id="selocc">
+            <option>---Select---</option>
+            <option>Mind Melter</option>
+            <option>Rogue Scientist</option>
+            <option>City-Rat</option>
+            <option>Ley Line Walker</option>
+          </select>
+
+        </div>
+
+        <div class="col-3">
+          
+            <label for="charlv">Character Level</label>
+            <input type="number" class="form-control" id="charlv" min="1">
+
+        </div>
+      </div>
+     
+      <div class="container">
+        <div class="row-8">
+          
+          <div class="col-3">
+            <label class="radio-inline"><input type="radio" name="rolltype">I will enter my rolls manually</label>
+            <label class="radio-inline"><input type="radio" name="rolltype">Roll dem bones for me!</label>
+          </div>
+
+          <div class="row">
+            <button type="button" class="btn">Roll!</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-1">
+          <label for="charIQ">IQ</label>
+          <input type="number" class="form-inline" id="charIQ" min="3">
+        </div>
+      </div>
+        
+
+      </div>
+          
+     
+   
+
+    
+    
 
 
 
-</body>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
 </html>
