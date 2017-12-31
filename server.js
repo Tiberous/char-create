@@ -3,6 +3,8 @@ var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
 
+app.use('/public', express.static('public'))
+
 router.use(function (req,res,next) {
   console.log("/" + req.method);
   next();
@@ -16,13 +18,9 @@ router.get("/about",function(req,res){
   res.sendFile(path + "about.html");
 });
 
-router.get("/contact",function(req,res){
-  res.sendFile(path + "contact.html");
-});
-
 router.get("/riftscc",function(req,res){
   res.sendFile(path + "riftscc.html");
-})
+});
 
 app.use("/",router);
 
